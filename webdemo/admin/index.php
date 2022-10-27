@@ -1,7 +1,7 @@
 <?php
 session_start();
-$urladmin ="http://postgres://oypqlcjyudheiy:13912114f57a7aaebb463f73218face5376961cfbc547f3bc124b024dc4411a9@ec2-44-199-9-102.compute-1.amazonaws.com:5432/dbha29cjdmnlfo/shopp/admin/";
-$urluser ="http://postgres://oypqlcjyudheiy:13912114f57a7aaebb463f73218face5376961cfbc547f3bc124b024dc4411a9@ec2-44-199-9-102.compute-1.amazonaws.com:5432/dbha29cjdmnlfo/shopp/";
+$urladmin ="postgres://oypqlcjyudheiy:13912114f57a7aaebb463f73218face5376961cfbc547f3bc124b024dc4411a9@ec2-44-199-9-102.compute-1.amazonaws.com:5432/dbha29cjdmnlfo/shopp/admin/";
+$urluser ="postgres://oypqlcjyudheiy:13912114f57a7aaebb463f73218face5376961cfbc547f3bc124b024dc4411a9@ec2-44-199-9-102.compute-1.amazonaws.com:5432/dbha29cjdmnlfo/shopp/";
 $home = "home.php";
 $register = "register.php";
 $shoppingcart = "shoppingcart.php";
