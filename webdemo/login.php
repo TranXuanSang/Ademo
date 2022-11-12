@@ -13,7 +13,7 @@ if (isset($_POST['btnSubmit'])) {
         $role = 'customer';
         $passwordmd5 = md5($password);
 
-        $sql = "select * from user where usname='" . $username . "' and uspassword='" . $passwordmd5 . "' and usrole ='" . $role . "' ";
+        $sql = "select * from user1 where usname='" . $username . "' and uspassword='" . $passwordmd5 . "' and usrole ='" . $role . "' ";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) == 1) {
@@ -29,7 +29,7 @@ if (isset($_POST['btnSubmit'])) {
             echo '<meta http-equiv="refresh" content="0;URL=?page=home.php"/>';
         } elseif (isset($_POST['btnSubmit'])) {
             $role = 'admin';
-            $sql = "select * from user where usname='" . $username . "' and uspassword='" . $passwordmd5 . "' and usrole ='" . $role . "' ";
+            $sql = "select * from user1 where usname='" . $username . "' and uspassword='" . $passwordmd5 . "' and usrole ='" . $role . "' ";
             $result = mysqli_query($conn, $sql);
 
             if (mysqli_num_rows($result) == 1) {
